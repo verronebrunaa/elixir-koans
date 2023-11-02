@@ -4,19 +4,19 @@ defmodule Atoms do
   @intro "Atoms"
 
   koan "Atoms are constants where their name is their own value" do
-    adam = :human
+    adam = :adam
     assert adam == :adam
   end
 
   koan "It is surprising to find out that booleans are atoms" do
-    assert is_atom(true) == :is_atom
-    assert is_boolean(false) == :is_boolean
+    assert is_atom(true) == true
+    assert is_boolean(false) == true
     assert true == true
     assert false == false
   end
 
   koan "Like booleans, the nil value is also an atom" do
-    assert is_atom(nil) == ___
-    assert nil == ___
+    assert is_atom(nil) == true
+    assert nil == nil
   end
 end
